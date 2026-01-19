@@ -1,10 +1,10 @@
 steps:
-- name: 'python:3.12-slim'
+- name: 'python:3.14-slim'
   entrypoint: 'bash'
   args:
     - '-c'
     - |
-      pip install --upgrade pip && pip install flask pytest &&
+      pip install flask pytest &&
       pytest
 
 - name: 'gcr.io/cloud-builders/docker'
