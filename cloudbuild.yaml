@@ -4,7 +4,7 @@ steps:
   args:
     - '-c'
     - |
-      pipx install flask pytest &&
+      pip install flask pytest &&
       pytest
 
 - name: 'gcr.io/cloud-builders/docker'
