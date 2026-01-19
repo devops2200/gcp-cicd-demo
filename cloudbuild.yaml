@@ -1,12 +1,12 @@
 steps:
-- name: 'python:3.9-slim'
+- name: 'python:3.12-slim'
   entrypoint: 'bash'
   args:
     - '-c'
     - |
       pip install flask pytest &&
       pytest
-      
+
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-app-repo/my-web-app:$SHORT_SHA', '.']
 - name: 'gcr.io/cloud-builders/docker'
