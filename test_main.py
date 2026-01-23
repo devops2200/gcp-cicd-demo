@@ -2,4 +2,4 @@ from main import hello
 
 def test_hello():
    
-    assert hello() == "Hello from Cloud Build!"
+    assert hello() == "Kaniko Build & Deploy Successful!"
