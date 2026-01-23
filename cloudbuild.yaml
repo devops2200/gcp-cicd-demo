@@ -18,7 +18,7 @@ steps:
     - 'deploy'
     - 'my-app-prod'  # The name of the service in Cloud Run
     - '--image'
-    - 'us-central1-docker.pkg.dev/$PROJECT_ID/my-app-repo/my-app:$SHORT_SHA'
+    - 'us-central1-docker.pkg.dev/$PROJECT_ID/my-app-repo/my-web-app:$SHORT_SHA'
     - '--region'
     - 'us-central1'
     - '--platform'
